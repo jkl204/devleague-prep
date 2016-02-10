@@ -1,4 +1,5 @@
 //2.5.16 exercise
+//J. Le
 var tacoArray = ['T','A','C','O','S','Z'];
 var intArray = [3, 4, 5, 6, 7];
 var truthArray = [true, true, true, true, true, true, true, false, true];
@@ -146,7 +147,7 @@ function checkTrueValues(BoolArray){
 		return false;
 	}
 
-	for(start=0; start < BoolArray.length; start++){
+	for(start = 0; start < BoolArray.length; start++){
 		
 		if((typeof BoolArray[start]) !== "boolean"){
 			console.log("checkTrueValues, non boolean value found in the array")

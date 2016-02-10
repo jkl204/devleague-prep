@@ -1,3 +1,4 @@
+//J. Lee
 /* create variables */
 
 //console.log("YEAH")

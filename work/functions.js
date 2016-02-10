@@ -1,3 +1,5 @@
+//J. Lee
+
 var a;
 var b;
 var sum;
