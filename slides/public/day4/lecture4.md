@@ -3,6 +3,7 @@
 * Terminal clean up
 * Git + github review
 * Review assignments
+* `Array` review
 * `for`
 * `break`
 * `forEach`
@@ -15,6 +16,10 @@
 Check zshell installation
 
 (Does not apply to Windows users)
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ---
 
@@ -29,8 +34,6 @@ Check zshell installation
 * `git commit -m`
 * `git push`
 
-Push functions file from last time.
-
 ???
 
 ```bash
@@ -41,9 +44,26 @@ git push
 
 ---
 
+# Assignments Review
+
+Questions???
+
+---
+
+# `Array` review
+
+Key notes:
+
+* Brackets to declare
+* Brackets to access *value* at index
+* Index is 0-based
+
+---
+
 # `for`
 
-Works on:
+Good for looping over:
+
 * `Array`
 * `string`
 
@@ -53,6 +73,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 
 # `break`
 
+Quit the loop early
+
+### But why?
+
 * "contains"
 * "all match"
 * "any match" ("find first")
@@ -61,14 +85,21 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 
 # `Array.forEach`
 
-Works on:
-* `Array`
+`Array`-only
 
-No `break`
+No `break`!!
+
+Takes an function as an argument.
+
+Possible use-case for anonymous function.
+
+*Why is index second?*
 
 
 ---
 
 # Exercises
+
+Array exercises from logic, plus:
 
 https://gist.github.com/jaywon/1dde0788823035650163
