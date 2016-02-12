@@ -20,9 +20,18 @@ stringOfNumbers = '';
 
 //presidents.forEach(printContent);
 //presidents loop
+//
 for(i = 0; i < presidents.length; i++){
 	console.log('The value of i is: ', i);
 	console.log('The value at Index is: ', presidents[i]);
+}
+//*/
+
+var i = 0;
+while(i < presidents.length){
+	console.log('The value of i is: ', i);
+	console.log('The value at Index is: ', presidents[i]);
+	i++;
 }
 
 //console.log(appendToString(10,20));
