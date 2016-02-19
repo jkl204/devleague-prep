@@ -27,18 +27,32 @@ for(i = 0; i < presidents.length; i++){
 }
 //*/
 
+//presidents done w/while loop
+/*
 var i = 0;
 while(i < presidents.length){
 	console.log('The value of i is: ', i);
 	console.log('The value at Index is: ', presidents[i]);
 	i++;
 }
+//*/
 
 //console.log(appendToString(10,20));
 //stringOfNumbers loop
 for( j = 10, k = 20; j <= k; j++){
 	stringOfNumbers += j;
 }
+
+//string of numbers done with a while loop
+/*
+var i = 10;
+var numstring = '';
+while(i <= 20){
+	numstring += i;
+	i++;
+}
+console.log(numstring);
+//*/
 
 console.log(stringOfNumbers);
 
@@ -50,6 +64,35 @@ for(l = 0, m = 0; l < 50; l++){
 }
 console.log("50 even numbers: ", evenNumberArray);
 
+//evenNumberArray done with while loop
+/*
+var i = 0;
+var evenNumberArray2=[];
+while(i < 50){
+	evenNumberArray2.push(i*2);
+	i++;
+}
+console.log("50 even numbers while looped", evenNumberArray2);
+//*/
+
+//evenNumberArray with recursion, cause why not.
+//*
+evenNumberArray2 = [];
+recurseEvenNumber(50, evenNumberArray2);
+console.log("50 even numbers recursive", evenNumberArray2);
+
+//takes the number of desired even numbers to add to the array as ct, adds them from 0 to evenArray
+function recurseEvenNumber(ct, evenArray){
+	ct--;
+	if(ct<0){
+		return;
+	}
+	recurseEvenNumber(ct, evenArray);
+	evenArray.push(ct*2);
+	return;
+}
+//*/
+
 //odd indicies loop in oopsArray
 oopsArray = ['turn', , 'down', , 'for', , 'what'];
 for(n = 1; n < oopsArray.length; n += 2){
@@ -57,10 +100,30 @@ for(n = 1; n < oopsArray.length; n += 2){
 }
 console.log(oopsArray);
 
+//odd indicies with while loop
+/*
+var oopsArray2 = ['turn', , 'down', , 'for', , 'what'];
+var i = 1;
+while(i<oopsArray2.length){
+	oopsArray2[i] = 'nope';
+	i+=2;
+}
+console.log(oopsArray2);
+//*/
+
 //iterate backwards through oopsArray loop
 for(o = oopsArray.length - 1; o >= 0; o--){
 	console.log(oopsArray[o]);
 }
+
+//iterate backwards using while loop
+/*
+var i = oopsArray.length-1;
+while(i>=0){
+	console.log(oopsArray[i]);
+	i--;
+}
+//*/
 
 //isNapTime loop
 isNapTime = false;
@@ -68,6 +131,15 @@ napSchedule = [false, false, true, false, true, true];
 for(p = 0; p < napSchedule.length; p++){
 	nap(napSchedule[p]);
 }
+
+//isNapTime using while loop
+/*
+var i =0;
+while(i< napSchedule.length){
+	nap(napSchedule[i]);
+	i++;
+}
+//*/
 
 //CopytArray - clone array values loop
 copyOfValuesArray = [];
