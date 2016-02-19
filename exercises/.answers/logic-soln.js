@@ -1,6 +1,6 @@
 /*
 # If statements
-`If` statments are a way for our applications to take different __paths__ through our code or make __choices__ about what kind of behavior our application takes based on certain conditions or values in our variables. The variable or value that we are testing to be true is known as the `condition`. 
+`If` statments are a way for our applications to take different __paths__ through our code or make __choices__ about what kind of behavior our application takes based on certain conditions or values in our variables. The variable or value that we are testing to be true is known as the `condition`.
 ​
 __In Human__: If this condition is true, do something.
 ​
@@ -33,7 +33,7 @@ function flipSwitch(){
 # For loops
 Sometimes we want to loop over a collection of data stored in an `Array`or inspect each character in a `String`. Or we just want to execute a `block` of code a set number of times before continuing on with the execution of our program. `For` loops allow us to execute a `block` of code and at the end of each `iteration` of our for loop we will evaluate a `condition` to determine if our loop should run again similar to our `if` statment.
 ​
-Our `for` loop is made up of 3 parts: 
+Our `for` loop is made up of 3 parts:
 1. Variable initialization
 2. Termination condition
 3. Afterthought
@@ -56,25 +56,21 @@ function makeCrazyLongString(string){
 makeCrazyLongString('taco');
 ```
 ​*/
-/*
- * Function - greatSummator`
- * Write a function that takes an `Array` with any number of type `Number` and
- * write a for loop to add all numbers in the `Array` and return the sum.
- */
-​
-/*
-# `Function - totalUnderWhatFor`
-Write a function that takes an `Array` with any number of type `Number`  and second variable called `total`. Return `true` if the sum of all values in the `Array` are less than `total` otherwise return `false`.
-​
-# `Function - checkTrueValues`
-Write a function that takes an `Array` with any number of type `Boolean` values and write a for loop to call our `isTrue` function with each value as input and return `true` if all values return true from our `isTrue` function.
-*/
+
 
 /*
- *  Function - youGetTaco
- * Write a function that takes a single `String` parameter called `action`.
- * If the value passed into our function is `'eat'` have the function return the `String` value `EAT TACOS`.
+ * Function - youGetTaco
 ​ */
+
+var myFirstAction;
+var mySecondAction;
+
+myFirstAction = 'eat';
+console.log('1. youGetTaco', myFirstAction, youGetTaco(myFirstAction));
+
+mySecondAction = 'dance';
+console.log('1. youGetTaco', mySecondAction, youGetTaco(mySecondAction));
+
 function youGetTaco(action) {
     if (action === 'eat') {
         return 'EAT TACOS';
@@ -82,18 +78,10 @@ function youGetTaco(action) {
     // else return undefined; <-- N.B. It does this when no return is sepcified
 }
 
-var myAction = 'eat';
-var myActionResult = youGetTaco(myAction);
-console.log('1. youGetTaco', myAction, myActionResult);
-
-var myOtherAction = 'drink';
-var myOtherActionResult = youGetTaco(myOtherAction);
-console.log('1. youGetTaco', myOtherAction, myOtherActionResult);
-
 /*
-# `Function - isNumberGreaterThan`
-Write a function that takes two variables of type `Number` called `first` and `second`respectively. Return true if the first number is greater than the second.
-​*/
+ * isNumberGreaterThan
+​ */
+
 function isNumberGreaterThan(first, second) {
     return first > second;
     // OR...
@@ -119,9 +107,8 @@ function isTrue(val) {
 }
 
 /*
- * `Function - isFalse`
- * Write a function that takes in a `Boolean` value named `val` and have the function `return` whether the value is false.
-​ */ 
+ * isFalse
+​ */
 function isFalse(val) {
     // if we care only about truthy-ness
     return !val;  // <-- guarantees a Boolean if val is not one
@@ -131,9 +118,9 @@ function isFalse(val) {
 }
 
 /*
-# `Function - isEqual`
-Write a function that takes two variables of type `String` called `firstWord` and `secondWord`respectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.
-​*/
+ * `Function - isEqual`
+ * Write a function that takes two variables of type `String` called `firstWord` and `secondWord`respectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.
+​ */
 function isEqual(firstWord, secondWord) {
     if (firstWord === secondWord) {
         return 'AWWWWRIGHT';
@@ -174,11 +161,17 @@ function doubleEquals(first, second) {
 }
 
 /*
-# `Function - totalOver30`
-Write a function that takes three variables of type `Number` called `first` and `second` and `third` respectively. Return `true` if the sum of all values are greater than 30 otherwise return `false`.
-​*/
+ *`Function - totalOver30`
+ *
+ * Write a function that takes three arguments.
+ * Assume all arguments are of type `Number`.
+ * Return `true` if the sum of all values are greater than 30, otherwise return
+ * `false`.
+ */
 function totalOver30(first, second, third) {
     return (first + second + third) > 30;
+    // OR...
+    // return isNumberGreaterThan(greatSummator([first, second, third]), 30)
 }
 
 /*
@@ -187,12 +180,14 @@ Write a function that takes four variables of type `Number` called `first` and `
 ​*/
 function totalUnderWhat(first, second, third, fourth) {
     return (first + second + third) < fourth;
+    // OR...
+    // return isNumberGreaterThan(fourth, greatSummator([first, second, third]));
 }
 
 /*
-# `Function - looptoNumber`
-Write a function that takes in a `Number` value named `limit` and have the function write a `for` loop that loops the number of times of `limit` and `console.log` each number as the loop executes.
-​*/
+ * `Function - loopToNumber`
+ * Write a function that takes in a `Number` value named `limit` and have the function write a `for` loop that loops the number of times of `limit` and `console.log` each number as the loop executes.
+​ */
 function loopToNumber(limit) {
     for (var i = 0; i < limit; i++) {
         console.log(i);
@@ -200,9 +195,9 @@ function loopToNumber(limit) {
 }
 
 /*
-# `Function - showEachValue`
-Write a function that takes in a `Array` value named `characters` that has a sequence of single character `String` values and have the function write a `for` loop that loops for each number of elements in the `Array` and `console.log` each character as the loop executes.
-​*/
+ * `Function - showEachValue`
+ * Write a function that takes in a `Array` value named `characters` that has a sequence of single character `String` values and have the function write a `for` loop that loops for each number of elements in the `Array` and `console.log` each character as the loop executes.
+​ */
 function showEachValue(characters) {
     for (var i = 0; i < characters.length; i++) {
         console.log(characters[i]);
@@ -210,13 +205,32 @@ function showEachValue(characters) {
 }
 
 /*
-# `Function - createArrayFromString`
-Write a function that takes a single variable of type `String` called `word` and write a `for` loop that creates an `Array` made up of each character in `word` except for `A`. We don't want no stinking A in our Array. Note: You will need to use the `Array.push()` method to complete this function. 
-*/
+ * createArrayFromString
+ */
+
+var words;
+var j;
+var jthWord;
+var jthWordResult;
+
+
+words = ['Tomato', 'Pizza', 'Happy', 'Apple'];
+for (j = 0; j < words.length; j++) {
+    jthWord = words[j];
+    jthWordResult = createArrayFromString(jthWord);
+    console.log(jthWord, jthWordResult);
+}
+
+
 function createArrayFromString(word) {
-    var wordCharsSansA = [];
-    for (var i = 0; i < word.length; i++) {
-        var ithChar = word[i];
+
+    var wordCharsSansA;
+    var i;
+    var ithChar;
+
+    wordCharsSansA = [];
+    for (i = 0; i < word.length; i++) {
+        ithChar = word[i];
         if (ithChar !== 'a' && ithChar !== 'A') {
             wordCharsSansA.push(ithChar);
         }
@@ -224,21 +238,46 @@ function createArrayFromString(word) {
     return wordCharsSansA;
 }
 
-var words = ['Tomato', 'Pizza', 'Happy'];
-for (var j = 0; j < words.length; j++) {
-    var jthWord = words[j];
-    var wordResult = createArrayFromString(jthWord);
-    console.log(jthWord, wordResult);
+
+/*
+ * greatSummator
+ */
+ function greatSummator(arrayOfNumbers) {
+
+   var sum;
+   var i;
+
+   sum = 0;
+   for (i = 0; i < arrayOfNumbers.length; i++) {
+     sum = sum + i;
+   }
+   return sum;
 }
 
-var word1 = 'Tomato';
-var word1Result = createArrayFromString(word1);
-console.log(word1, word1Result);
 
-var word2 = 'Pizza';
-var word2Result = createArrayFromString(word2);
-console.log(word2, word2Result);
+/*
+ * totalUnderWhatFor
+ */
+function totalUnderWhatFor(arrayOfNumbers, total) {
+  return greatSummator(arrayOfNumbers) < total;
+}
 
-var word3 = 'Happy';
-var word3Result = createArrayFromString(word3);
-console.log(word3, word3Result);
+
+/*
+ * checkTrueValues
+ */
+function checkTrueValues(arrayOfBools) {
+
+  var i;
+  var result;
+
+  result = true;
+  for (i = 0; i < arrayOfBools.length; i++) {
+    if (!isTrue(arrayOfBools[i])) {
+      result = false;
+      break;
+      // OR just return false here and return true at the bottom
+    }
+  }
+  return result;
+}
