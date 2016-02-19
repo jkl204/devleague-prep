@@ -1,0 +1,16 @@
+#headerImage{
+	display: inline-block;
+}
+
+head h1{
+	margin: auto;
+	vertical-align: auto;
+	text-align:center;
+	border: 1px solid black;
+}
+
+div{
+	margin: auto;
+	border: 3px solid #73AD21;
+    padding: 10px;
+}

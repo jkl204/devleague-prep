@@ -89,7 +89,6 @@ function recurseEvenNumber(ct, evenArray){
 	}
 	recurseEvenNumber(ct, evenArray);
 	evenArray.push(ct*2);
-	return;
 }
 //*/
 
