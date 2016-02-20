@@ -1,5 +1,31 @@
 #headerImage{
+	/*vertical-align: center;*/
+	display: block;
+	margin: auto;
+}
+
+#header{
+	text-align: center;
+}
+
+.listItem{
+	display: inline;
+	list-style-type: none;
+	background-color: cyan;
+	border: 1px solid grey;
+	padding: 5px 5px 5px 5px;
+}
+
+.listBox{
 	display: inline-block;
+	margin: auto;
+	padding: 0;
+}
+
+.coloredBr{
+	height: 10px;
+	width: 100%;
+	background-color: #98AFC7;
 }
 
 head h1{
@@ -7,10 +33,4 @@ head h1{
 	vertical-align: auto;
 	text-align:center;
 	border: 1px solid black;
-}
-
-div{
-	margin: auto;
-	border: 3px solid #73AD21;
-    padding: 10px;
 }
