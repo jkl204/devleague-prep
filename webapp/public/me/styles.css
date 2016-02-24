@@ -1,0 +1,53 @@
+#tourney {
+  font-family: "Fira Mono"
+}
+
+.header {
+  color: blue;
+  font-weight: bold;
+}
+
+.header.coolstuff {
+  font-size: 42pt;
+}
+
+div.container {
+  width: 100%;
+}
+
+div.container > div {
+  text-align: center;
+}
+
+
+
+.infobox > .heading {
+    background-color: #08a0ff;
+    padding: 15px 10px 15px 10px;
+}
+
+.infobox > .heading > h2 {
+    color: #a0c0ff;
+    margin-top: 10px;
+}
+
+.infobox > .body {
+    background-color: #a0c0ff;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,9 @@
 # Agenda
 
-* CSS Review
 * Events
-* `this`
+    * Higher-Order Functions
+    * Callbacks
+    * Registering a callback
 * Further Help
 * Exercises
 
@@ -16,7 +17,7 @@ Your computer "speaks" via the screen and "listens" to key strokes and mouse cli
 
 You "listen" with your eyes and "speak" by typing on the keyboard and clicking the mouse.
 
-Events are the units of that dialogue 
+Events are the units of that dialogue
 
 ---
 
@@ -46,27 +47,16 @@ e.g. "Call me back when you get a mouse click event to discuss"
 
 # Registering Callbacks
 
-### From HTML
-
-'on'-name attributes
-
 ### From DOM
 
 ```
-element.addEventListener(name, callback)
+element.onclick = callback;
+// OR...
+element.addEventListener('click', callback);
 ```
 
----
-
-# `this`
-
-(You don't need it)
-
-Only applies to *methods*
-
-Be careful with higher order functions!
-
-My recommendation: You don't need it (or methods)
+> Also possible to register from html using on<event name> attributes.
+  The text in the attribute is the function body.
 
 ---
 
@@ -98,4 +88,3 @@ Code Academy:
 ### Ex 2
 * `document.getElementsByClassName`
 * `element.classList`
-
